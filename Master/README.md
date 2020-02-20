@@ -1,11 +1,11 @@
-# ${project}
+# [${project}]
 
 ## Description
 
-${description}
+[${description}]
         
 ## Table of Contents
-        
+
 * [Installation](#installation)
         
 * [Usage](#usage)
@@ -22,29 +22,29 @@ ${description}
         
 To install necessary dependencies, run the following command:
         
-```
-${dependencies}
-```
+...
+[${dependencies}]
+...
         
 ## Usage
 
-${about}
+[${about}]
         
 ## License
 
-${licensetype}
+[${licensetype}]
         
 ## Contributing
         
-${contributing}
+[${contributing}]
 
 ## Tests
         
 To run tests, run the following command:
         
-```
-${tests}
-```
+...
+[${tests}]
+...
         
 ## Questions
         

@@ -44,7 +44,7 @@ inquirer.prompt([
             name: "contributing"
         }
     ]).then(function(answer) {
-
+        
         console.log(answer);
 
         //ToDo Generate Data
@@ -58,7 +58,8 @@ inquirer.prompt([
 
 
     function getData(username, project, description, licensetype, dependencies, tests, about, contributing) {
-        return `# ${project}
+        return `
+        # ${project}
 
         ## Description
 
@@ -111,7 +112,10 @@ inquirer.prompt([
         If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
         
         `;
+
     }
+
+    module.exports = getData;
 
 //function init() {}
 
