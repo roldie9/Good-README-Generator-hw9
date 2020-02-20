@@ -22,9 +22,9 @@ ${description}
         
 To install necessary dependencies, run the following command:
         
-...
+```
 ${dependencies}
-...
+```
         
 ## Usage
 
@@ -42,9 +42,9 @@ ${contributing}
         
 To run tests, run the following command:
         
-...
+```
 ${tests}
-...
+```
         
 ## Questions
         
