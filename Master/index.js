@@ -1,26 +1,26 @@
-const questions = [ require("questions");
+const inquirer = require("inquirer");
+const fs = require("fs");
 
-questions
-    .prompt([
+inquirer.prompt([
         {
             type: "input",
             message: "What is your GitHub user name?",
             name: "username"
         },
         {
-            type: "project name",
+            type: "input",
             message: "What is your project's name?",
-            name: ""
+            name: "project"
         },
         {
-            type: "description",
+            type: "input",
             message: "Please write a short description of your project.",
-            name: ""
+            name: "description"
         },
         {
-            type: "license type",
+            type: "input",
             message: "What kind of license should your project have?",
-            name: ""
+            name: "licensetype"
         },
         {
             type: "dependencies",
@@ -33,25 +33,84 @@ questions
             name: "npm test"
         },
         {
-            type: "about",
+            type: "input",
             message: "What does the user need to know about using the repo?",
-            name: ""
+            name: "about"
         },
         {
-            type: "contributions",
+            type: "input",
             message: "What does the user need to know about contributing to the repo?",
-            name: ""
+            name: "contributing"
         }
-    ])
+    ]).then(function(answer) {
 
-];
+        console.log(answer);
 
-function writeToFile("README.md", data) {
+        //ToDO Generate Data
 
-}
+        const data = getData(answer);
 
-function init() {
+        fs.writeFile("README.md", data, function() {
 
-}
+        });
+    });
 
-init();
+    function getData(username, project, description, licensetype, about, contributing) {
+        return `# ${project}
+
+        ## Description
+
+        ${description}
+        
+        ## Table of Contents
+        
+        * [Installation](#installation)
+        
+        * [Usage](#usage)
+        
+        * [License](#license)
+        
+        * [Contributing](#contributing)
+        
+        * [Tests](#tests)
+        
+        * [Questions](#questions)
+        
+        ## Installation
+        
+        To install necessary dependencies, run the following command:
+        
+        ...
+        npm i
+        ...
+        
+        ## Usage
+
+        ${about}
+        
+        ## License
+
+        ${licensetype}
+        
+        ## Contributing
+        
+        ${contributing}
+
+        ## Tests
+        
+        To run tests, run the following command:
+        
+        ...
+        npm test
+        ...
+        
+        ## Questions
+        
+        If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
+        
+        `;
+    }
+
+//function init() {}
+
+//init();
