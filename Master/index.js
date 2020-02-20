@@ -46,6 +46,16 @@ inquirer.prompt([
     ]).then(function(answer) {
         
         console.log(answer);
+        
+        //const queryURL = 'https://api.github.com/users/${username}';
+
+        //fetch data using axios
+        
+        //axios.get(queryUrl).then(function(res) {
+            //const ghUserName = res.data.map(function(user) {
+            //return user.name;
+            //});
+        //})   
 
         //ToDo Generate Data
 
