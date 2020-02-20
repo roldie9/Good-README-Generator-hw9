@@ -23,14 +23,14 @@ inquirer.prompt([
             name: "licensetype"
         },
         {
-            type: "dependencies",
+            type: "npm i",
             message: "What command should be run to install dependencies?",
-            name: "npm i"
+            name: "dependencies"
         },
         {
-            type: "tests",
+            type: "npm test",
             message: "What command should be run to run tests?",
-            name: "npm test"
+            name: "tests"
         },
         {
             type: "input",
@@ -55,7 +55,7 @@ inquirer.prompt([
         });
     });
 
-    function getData(username, project, description, licensetype, about, contributing) {
+    function getData(username, project, description, licensetype, dependencies, tests, about, contributing) {
         return `# ${project}
 
         ## Description
@@ -81,7 +81,7 @@ inquirer.prompt([
         To install necessary dependencies, run the following command:
         
         ...
-        npm i
+        ${dependencies}
         ...
         
         ## Usage
@@ -101,7 +101,7 @@ inquirer.prompt([
         To run tests, run the following command:
         
         ...
-        npm test
+        ${tests}
         ...
         
         ## Questions
