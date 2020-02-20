@@ -1,51 +1,53 @@
-# ${project}
+# undefined
 
-## Description
+        ## Description
 
-${description}
+        undefined
         
-## Table of Contents
+        ## Table of Contents
         
-* [Installation](#installation)
+        * [Installation](#installation)
         
-* [Usage](#usage)
-    
-* [License](#license)
+        * [Usage](#usage)
         
-* [Contributing](#contributing)
+        * [License](#license)
         
-* [Tests](#tests)
+        * [Contributing](#contributing)
         
-* [Questions](#questions)
+        * [Tests](#tests)
         
-## Installation
+        * [Questions](#questions)
         
-To install necessary dependencies, run the following command:
+        ## Installation
         
-...
-${dependencies}
-...
+        To install necessary dependencies, run the following command:
         
-## Usage
+        ...
+        undefined
+        ...
+        
+        ## Usage
 
-${about}
+        undefined
         
-## License
+        ## License
 
-${licensetype}
+        undefined
         
-## Contributing
+        ## Contributing
         
-${contributing}
+        undefined
 
-## Tests
+        ## Tests
         
-To run tests, run the following command:
+        To run tests, run the following command:
         
-...
-${tests}
-...
+        ...
+        undefined
+        ...
         
-## Questions
+        ## Questions
         
-If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
+        If you have any questions about the repo, open an issue or contact [[object Object]](https://api.github.com/users/[object Object]) directly at null.
+        
+        
