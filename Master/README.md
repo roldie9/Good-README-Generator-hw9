@@ -1,9 +1,9 @@
 
-# monkey_see
+# The_GOAT_Project
 
 ## Description
 
-monkey dooo
+This project is the Greatest of All Time.
         
 ## Table of Contents
         
@@ -24,27 +24,27 @@ monkey dooo
 To install necessary dependencies, run the following command:
         
 ```
-
+npm i
 ```
         
 ## Usage
 
-monkeys are dopppe
+This repo requires greatness.
         
 ## License
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
         
 ## Contributing
         
-
+Nothing, just be great. At least try.
 
 ## Tests
         
 To run tests, run the following command:
         
 ```
-
+npm test
 ```
         
 ## Questions

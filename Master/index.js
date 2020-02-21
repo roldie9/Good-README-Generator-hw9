@@ -25,14 +25,16 @@ inquirer.prompt([
             name: "licensetype"
         },
         {
-            type: "npm i",
+            type: "input",
             message: "What command should be run to install dependencies?",
-            name: "dependencies"
+            name: "dependencies",
+            default: "npm i"
         },
         {
-            type: "npm test",
+            type: "input",
             message: "What command should be run to run tests?",
-            name: "tests"
+            name: "tests",
+            default: "npm test"
         },
         {
             type: "input",
