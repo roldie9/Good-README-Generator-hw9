@@ -1,51 +1,54 @@
-# [${project}]
 
-## Description
+        # 
 
-[${description}]
-        
-## Table of Contents
+        ## Description
 
-* [Installation](#installation)
         
-* [Usage](#usage)
         
-* [License](#license)
+        ## Table of Contents
         
-* [Contributing](#contributing)
+        * [Installation](#installation)
         
-* [Tests](#tests)
+        * [Usage](#usage)
         
-* [Questions](#questions)
+        * [License](#license)
         
-## Installation
+        * [Contributing](#contributing)
         
-To install necessary dependencies, run the following command:
+        * [Tests](#tests)
         
-...
-[${dependencies}]
-...
+        * [Questions](#questions)
         
-## Usage
+        ## Installation
+        
+        To install necessary dependencies, run the following command:
+        
+        ...
+        
+        ...
+        
+        ## Usage
 
-[${about}]
         
-## License
+        
+        ## License
 
-[${licensetype}]
+        [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
         
-## Contributing
+        ## Contributing
         
-[${contributing}]
+        
 
-## Tests
+        ## Tests
         
-To run tests, run the following command:
+        To run tests, run the following command:
         
-...
-[${tests}]
-...
+        ...
         
-## Questions
+        ...
         
-If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
+        ## Questions
+        
+        If you have any questions about the repo, open an issue or contact [](https://api.github.com/users/) directly at null.
+        
+        

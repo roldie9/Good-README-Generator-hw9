@@ -19,8 +19,9 @@ inquirer.prompt([
             name: "description"
         },
         {
-            type: "input",
+            type: "list",
             message: "What kind of license should your project have?",
+            choices: ["BSD","Apache"],
             name: "licensetype"
         },
         {
@@ -46,6 +47,10 @@ inquirer.prompt([
     ]).then(function(answer) {
         
         console.log(answer);
+
+        if (answer.licensetype=== "BSD") {
+            answer.licensetype= '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+        }
         
         //const queryURL = 'https://api.github.com/users/${username}';
 
@@ -59,6 +64,8 @@ inquirer.prompt([
 
         //ToDo Generate Data
 
+        console.log("answer", JSON.stringify(answer));
+
         const data = getData(answer);
 
         fs.writeFile("README.md", data, function() {
@@ -67,7 +74,9 @@ inquirer.prompt([
     });
 
 
-    function getData(username, project, description, licensetype, dependencies, tests, about, contributing) {
+    function getData({username, project, description, licensetype, dependencies, tests, about, contributing}) {
+
+        console.log("project",project);
         return `
         # ${project}
 
