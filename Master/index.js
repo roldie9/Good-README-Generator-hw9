@@ -21,7 +21,7 @@ inquirer.prompt([
         {
             type: "list",
             message: "What kind of license should your project have?",
-            choices: ["BSD","Apache"],
+            choices: ["BSD","Apache","Eclipse"],
             name: "licensetype"
         },
         {
@@ -48,8 +48,14 @@ inquirer.prompt([
         
         console.log(answer);
 
-        if (answer.licensetype=== "BSD") {
-            answer.licensetype= '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+        if (answer.licensetype === "BSD") {
+            answer.licensetype = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+        }
+        if (answer.licensetype === "Apache") {
+            answer.licensetype = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        }
+        if (answer.licensetype === "Eclipse") {
+            answer.licensetype = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
         }
         
         //const queryURL = 'https://api.github.com/users/${username}';

@@ -1,9 +1,9 @@
 
-        # 
+        # dope project
 
         ## Description
 
-        
+        it's dope
         
         ## Table of Contents
         
@@ -29,15 +29,15 @@
         
         ## Usage
 
-        
+        it's fun
         
         ## License
 
-        [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+        [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
         
         ## Contributing
         
-        
+        no thanks
 
         ## Tests
         
@@ -49,6 +49,6 @@
         
         ## Questions
         
-        If you have any questions about the repo, open an issue or contact [](https://api.github.com/users/) directly at null.
+        If you have any questions about the repo, open an issue or contact [roldie9](https://api.github.com/users/roldie9) directly at null.
         
         
