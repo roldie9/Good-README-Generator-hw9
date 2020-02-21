@@ -80,65 +80,65 @@ inquirer.prompt([
     });
 
 
-    function getData({username, project, description, licensetype, dependencies, tests, about, contributing}) {
+function getData({username, project, description, licensetype, dependencies, tests, about, contributing}) {
 
-        console.log("project",project);
-        return `
-        # ${project}
+    console.log("project",project);
+    return `
+# ${project}
 
-        ## Description
+## Description
 
-        ${description}
+${description}
         
-        ## Table of Contents
+## Table of Contents
         
-        * [Installation](#installation)
+* [Installation](#installation)
         
-        * [Usage](#usage)
+* [Usage](#usage)
         
-        * [License](#license)
+* [License](#license)
         
-        * [Contributing](#contributing)
+* [Contributing](#contributing)
         
-        * [Tests](#tests)
+* [Tests](#tests)
         
-        * [Questions](#questions)
+* [Questions](#questions)
         
-        ## Installation
+## Installation
         
-        To install necessary dependencies, run the following command:
+To install necessary dependencies, run the following command:
         
-        ...
-        ${dependencies}
-        ...
+\`\`\`
+${dependencies}
+\`\`\`
         
-        ## Usage
+## Usage
 
-        ${about}
+${about}
         
-        ## License
+## License
 
-        ${licensetype}
+${licensetype}
         
-        ## Contributing
+## Contributing
         
-        ${contributing}
+${contributing}
 
-        ## Tests
+## Tests
         
-        To run tests, run the following command:
+To run tests, run the following command:
         
-        ...
-        ${tests}
-        ...
+\`\`\`
+${tests}
+\`\`\`
         
-        ## Questions
+## Questions
         
-        If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
+If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
         
-        `;
+`;
 
-    }
+}
 
     module.exports = getData;
 
