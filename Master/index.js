@@ -60,29 +60,27 @@ inquirer.prompt([
             answer.licensetype = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
         }
         
-        //const queryURL = 'https://api.github.com/users/${username}';
+        const queryURL = `https://api.github.com/users/${answer.username}`;
 
         //fetch data using axios
         
-        //axios.get(queryUrl).then(function(res) {
-            //const ghUserName = res.data.map(function(user) {
-            //return user.name;
-            //});
-        //})   
+        axios.get(queryURL).then(function(res) {
+            console.log(res)
+            let userImage = res.data.avatar_url
 
-        //ToDo Generate Data
+            console.log("answer", JSON.stringify(answer));
+            console.log(userImage)
 
-        console.log("answer", JSON.stringify(answer));
+            const data = getData(answer, userImage);
 
-        const data = getData(answer);
+            fs.writeFile("README.md", data, function() {
 
-        fs.writeFile("README.md", data, function() {
-
-        });
+            });
+        })   
     });
 
 
-function getData({username, project, description, licensetype, dependencies, tests, about, contributing}) {
+function getData({username, project, description, licensetype, dependencies, tests, about, contributing},userImage) {
 
     console.log("project",project);
     return `
@@ -135,6 +133,8 @@ ${tests}
 \`\`\`
         
 ## Questions
+
+![user profile image](${userImage})
         
 If you have any questions about the repo, open an issue or contact [${username}](https://api.github.com/users/${username}) directly at null.
         
